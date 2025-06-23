@@ -65,7 +65,7 @@ The system functions in real-time through tight integration of image capture, de
 ---
 
 ## 🗂️ Folder Structure
-
+```
 CarVizion/
 ├── Camera_Control/
 │   └── CameraWebServer.ino             # ESP32-CAM control code
@@ -89,7 +89,7 @@ CarVizion/
 │
 ├── kaggle.json                         # Kaggle API key for dataset access
 ├── README.md                           # Project documentation
-└── requirements.txt                    # Python dependencies
+└── requirements.txt                    # Python dependencies ```
 
 🔧 Installation & Setup
 1. Clone Repository
@@ -164,18 +164,4 @@ This project has been published as a Research Paper titled:
 CarVizion: An Intelligent Vehicle Body Type Classification Assistant for Smart Parking Solutions
 VIT Chennai, 2025 – Research Team: Kishore S, Rohit M, Naveen K, Suhasini S
 (contact: kishore.s2022a@vitstudent.ac.in)
-
-## 🧾 Dataset & Model
-
-- **Dataset:** [Stanford Car Body Type Dataset on Kaggle](https://www.kaggle.com/datasets/kadirkadioglu/stanford-car-body-type-classification)
-
-- **Model Architecture:**
-  - **Base:** MobileNetV2 (ImageNet pretrained, top removed)
-  - **Added Layers:** GAP → Dense(128) → Dropout(0.5) → Softmax
-
-- **Performance:**
-  - ✅ **Accuracy:** 91%
-  - 📊 **ROC-AUC:** 0.927
-  - 🕒 **Avg Inference Time:** 2s
-  - 🧠 **Model Size:** 10.86 MB
 
